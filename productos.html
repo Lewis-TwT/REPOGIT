@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCTOS</title>
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>PRODUCTOS</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Mi Sitio Web</h1>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes.html">Quiénes Somos</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Nuestros Productos</h2>
+        </section>
+        <section class="content">
+            <div class="card">
+                <h3>Producto 1</h3>
+                <p>Descripción del producto 1.</p>
+            </div>
+            <div class="card">
+                <h3>Producto 2</h3>
+                <p>Descripción del producto 2.</p>
+            </div>
+            <div class="card">
+                <h3>Producto 3</h3>
+                <p>Descripción del producto 3.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

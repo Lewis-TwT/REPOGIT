@@ -1,15 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QUIENES SOMOS</title>
+    <title>Quiénes Somos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1> QUIENES SOMOS </h1>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Possimus natus obcaecati labore dicta quos doloremque id 
-        voluptatibus quisquam nesciunt voluptatum! Atque non, 
-        nemo maiores quas optio aut fugiat libero quia.</p>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Mi Sitio Web</h1>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes.html" class="active">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Quiénes Somos</h2>
+        </section>
+        <section class="content">
+            <p>Somos una empresa dedicada a ofrecer soluciones tecnológicas y servicios de calidad para nuestros clientes. Nuestra misión es brindar productos y servicios innovadores que satisfagan las necesidades del mercado.</p>
+            <p>Nuestra visión es convertirnos en líderes del sector, destacándonos por nuestra creatividad, compromiso y excelencia.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

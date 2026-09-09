@@ -1,24 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTOS</title>
+    <title>Contactos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1> CONTACTOS </h1>
-        <form action="">NOMBRE</form>
-        <input type="text" name="NOMBRE" id="nombre">
-        <br>
-        <label for="">CORRERO</label>
-        <input type="text" name="CORRERO" id="correo">
-        </form>
-        <br>
-        <label for="txt" name="referencia" id="referencia"></label>
-        <br>
-        <label for="">COMENTARIO</label>
-        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Mi Sitio Web</h1>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contactos.html" class="active">Contactos</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Contáctanos</h2>
+        </section>
+        <section class="content">
+            <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
